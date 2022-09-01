@@ -1,0 +1,10 @@
+name: clean-up-instances
+on: workflow_dispatch
+jobs:
+    manage-runners:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: LorenzoDrudi/clean-up-cloud-rogue-instances@develop
+            env:
+              APP_ID: ${{ secrets.APP_ID }}
+              APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
