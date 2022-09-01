@@ -6,5 +6,5 @@ jobs:
         steps:
           - uses: LorenzoDrudi/clean-up-cloud-rogue-instances@develop
             env:
-              APP_ID: ${{ secrets.APP_ID }}
-              APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
+              AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+              AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
