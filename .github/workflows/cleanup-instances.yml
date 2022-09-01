@@ -10,3 +10,4 @@ jobs:
               AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             with:
               repo-name: 'dummy-repo-ephemeral-runners'
+              aws-region: 'eu-west-2'
